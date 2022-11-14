@@ -1,0 +1,11 @@
+.root {
+    overflow: hidden;
+    width: 0;
+    background-color: rgb(248, 248, 248);
+    height: 100%;
+    transition: width 0.3s ease;
+
+    &.show {
+        width: 260px;
+    }
+}
