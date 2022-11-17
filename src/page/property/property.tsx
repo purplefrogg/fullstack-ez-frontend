@@ -21,7 +21,6 @@ export const PropertyPage = () => {
     await propertyApi.delete(id)
     refetch()
   }
-
   return (
     <div className={s.root}>
       <form onSubmit={handleSubmit(onSubmit)} className={s.form}>
@@ -88,7 +87,7 @@ export const PropertyPage = () => {
                   <TableCell>{property.price}</TableCell>
 
                   <TableCell>{property.typeModel}</TableCell>
-                  <TableCell>{property.type.name}</TableCell>
+                  <TableCell>{property.type?.name}</TableCell>
                   <TableCell align='right' onClick={() => onDelete(property._id)}>
                     <DeleteIcon />
                   </TableCell>

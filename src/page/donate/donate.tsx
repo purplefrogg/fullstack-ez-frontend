@@ -29,7 +29,6 @@ export const DonatePage = () => {
         <TextField {...register('amount', { valueAsNumber: true })} label='amount' type={'number'} variant='outlined' />
         <FormControl fullWidth>
           <InputLabel>member</InputLabel>
-
           {member && (
             <Select
               label='member'
@@ -49,7 +48,7 @@ export const DonatePage = () => {
           )}
         </FormControl>
 
-        <TextField {...register('date')} type={'date'} label='birthday' focused variant='outlined' />
+        <TextField {...register('date')} type={'date'} label='date' focused variant='outlined' />
 
         <Button type='submit' variant='outlined'>
           Create new Donate
